@@ -91,7 +91,6 @@ initheader = {
 request = Net::HTTP::Post.new(uri.request_uri, initheader)
 payload = JSON.pretty_generate(data_temperature)
 request.body = payload
-puts "hoge 3"
 p request
 response = https.request(request)
 #response = Net::HTTP.new(uri.host, uri.port).start {|https| https.request(request) }
