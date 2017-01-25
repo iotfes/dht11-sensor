@@ -4,7 +4,7 @@ deviceId: "******"
 userId: "******"
 # Cumulocityへのログインパスワード
 password:  "******"
-# GPIOのPIN番号
+# GPIOのPIN番号 (例：4)
 gpioPin: **
 # CumulocityのURL
 url: "******"

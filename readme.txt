@@ -2,13 +2,28 @@
 # dht11.rb
 # DHT11温湿度センサから温度と湿度を取得し、Cumulocityへアップするスクリプト
 # usage: $ sudo ruby dht11.rb
-# Last update: 2016/12/19
+# Last update: 2017/01/25
 # author: Sho KANEMARU
 #----------------------------------------------------------------------
 
-○DHTセンサのrubyライブラリを使用するには、下記が必要。
-- bcm2835をインストール (コンパイルが必要)
--- http://www.airspayce.com/mikem/bcm2835/
+○セットアップ方法
+- config.ymlに記入
+----------------
+# デバイスID (Cumulocityが払い出したID)
+deviceId: "******"
+# CumulocityへのログインID
+userId: "******"
+# Cumulocityへのログインパスワード
+password:  "******"
+# GPIOのPIN番号 (例：4)
+gpioPin: **
+# CumulocityのURL
+url: "******"
+----------------
+
+- DHTセンサのrubyライブラリをインストール
+-- bcm2835をインストール (コンパイルが必要)
+--- http://www.airspayce.com/mikem/bcm2835/
 
 $ tar zxvf bcm2835-1.xx.tar.gz
 $ cd bcm2835-1.xx
