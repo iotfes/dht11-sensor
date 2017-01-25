@@ -34,5 +34,7 @@ $ ./configure
 $ make
 $ sudo make check
 $ sudo make install
-
 $ sudo gem install dht-sensor-ffi
+
+○起動方法
+$ sudo ruby dht11.rb
