@@ -21,6 +21,9 @@ gpioPin: **
 url: "******"
 ----------------
 
+- ruby-devパッケージをインストール
+$ sudo apt-get install ruby-dev
+
 - DHTセンサのrubyライブラリをインストール
 -- bcm2835をインストール (コンパイルが必要)
 --- http://www.airspayce.com/mikem/bcm2835/
