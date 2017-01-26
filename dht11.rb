@@ -13,7 +13,7 @@ require 'uri'
 require 'base64'
 require 'dht-sensor-ffi'
 require 'yaml'
-#require 'addressable/uri'
+require 'addressable/uri'
 
 #------------ 設定ファイル読み込み ------------
 confFileName = "./config.yml"
@@ -72,8 +72,8 @@ data_humidity = {
 puts "temp: #{val.temp}, humid: #{val.humidity}"
 
 # URLからURIをパース
-uri = URI.parse(URL)
-#uri = Addressable::URI.parse(URL)
+#uri = URI.parse(URL)
+uri = Addressable::URI.parse(URL)
 
 https = Net::HTTP.new(uri.host, uri.port)
 https.set_debug_output $stderr
